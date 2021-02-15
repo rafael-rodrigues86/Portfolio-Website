@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevRafael Portfolio Website</title>
+
+    <!--Fonts-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/mywork.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--Font Awesome-->
+    
+    <script src="https://kit.fontawesome.com/937458d88c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#"  class="logo__link">
+                <span class="logo__texto">RR</span>
+            </a>
+        </div>
+        <button aria-label="toggle navigation" class="nav-toggle">
+            <span class="hamburguer"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Introduction-->
+    
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Rafael Rodrigues</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/foto-perfil.jpg" alt="Picture of myself" class="intro__img">
+    
+        </section>
+
+        <!--My Services-->
+
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Website Development</h3>
+                    <p>Using HTML5, CSS3, JavaScript and PHP, I build fast and responsive websites that strengthens your company's brand while ensuring optimal user experience.</p>
+                </div>
+                <div class="service">
+                    <h3>SEO and Performance</h3>
+                    <p>Make sure your website is seen by your target audience. I will improve your website, making it fast and easy to find through search engines such as Google, Bing and Yahoo.</p>
+                </div>
+                <div class="service">
+                    <h3>Wordpress</h3>
+                    <p>Custom WordPress theme and plugin development. You can easily update your website's content without having to worry about the technical details. </p>
+                </div>
+            </div> <!--end of services-->
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!--About Me-->
+
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Web Developer based in Bordeaux/France</p>
+            <div class="about-me__body">
+                <p>Hello World. My name is Rafael Rodrigues, a web developer based in Bordeaux – France. I have been interested in technology, in general, and coding for quite some time, but it used to be mainly a hobby.</p>
+                <p>When the whole world stopped during the pandemic, I found myself with more time on my hands, so I decided to transform my passion into a profession. I took courses in the field of web development, more specifically in HTML5, CSS3, JavaScript and PHP, and, in order to hone my skills, I started several projects, which can be seen below.</p>
+                <p>These projects left me even more motivated to seek new challenges and opportunities.</p>
+            </div>
+
+           <img src="img/foto_sentado_na_praca.jpg" alt="Second Picture of Myself" class="about-me__img"> 
+
+        </section>
+
+        <!--My Work-->
+
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+        
+            <div class="portfolio">
+
+                <!--Portfolio Item 1-->
+                <a href="./portfolio-item.html" class="portfolio__item">
+                    <img src="img/foto-apeperia.jpg" alt="Logo of the Apeperia Website" class="portfolio__img">                                      
+               </a>
+
+               <!--Portfolio Item 2-->               
+                <a href="./portfolio-item-unfinished-1.html" class="portfolio__item">
+                    <img src="img/wordpress-logo-opacity.jpg" alt="Logo of a Wordpress Website" class="portfolio__img">                    
+                </a>               
+
+                <!--Portfolio Item 3-->
+                <a href="./portfolio-item-unfinished-2.html" class="portfolio__item">
+                    <img src="img/spotify-logo-opacity.jpg" alt="Logo of a Spotify clone Website" class="portfolio__img">
+                                      
+                </a>
+
+               <!--Portfolio Item 4-->
+                <a href="./portfolio-item-unfinished-3.html" class="portfolio__item">
+                   <img src="img/text-editor-logo-opacity.jpg" alt="Logo of a Rich Text Editor" class="portfolio__img">                   
+               </a>         
+
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer class="footer">
+
+        <a href="mailto:rafael.raraujo86@gmail.com" class="footer__link">rafael.raraujo86@gmail.com</a>
+        <ul class="social-list">
+            <!--<li class="social-list__item">
+                <a href="twitter" class="social-list__link">
+                    <i class="fab fa-twitter-square"></i>
+                </a> -->
+            </li>
+            <li class="social-list__item">
+                <a href="https://bit.ly/39tBgLv" target="_blank" rel="noopener noreferrer" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://bit.ly/2MByCdQ" target="_blank" rel="noopener noreferrer" class="social-list__link">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </li>
+            <!--<li class="social-list__item">
+                <a href="" class="social-list__link">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li> -->
+        </ul>
+        
+    </footer>
+
+    <script src="js/index.js"></script>
+    
+</body>
+    
+</html>
