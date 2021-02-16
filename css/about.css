@@ -4,15 +4,20 @@
 }
 
 .about-me__img {
-    box-shadow: var(--bs);
+    -webkit-box-shadow: var(--bs);
+            box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
     .about-me {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 2em 200px;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: "title img" "subtitle img" "text img";
-        column-gap: 2em;
+            grid-template-areas: "title img" "subtitle img" "text img";
+        -webkit-column-gap: 2em;
+           -moz-column-gap: 2em;
+                column-gap: 2em;
     }
 
     .section__title--about {
@@ -21,6 +26,7 @@
 
     .section__subtitle--about {
         grid-column: 1 / -1;
+        -ms-grid-row: 2;
         grid-row: 2;
         position: relative;
         left: -1em;
@@ -33,5 +39,17 @@
         grid-area: img;
         position: relative;
         z-index: 2;
+    }
+}
+
+@media (min-width: 600px) {
+    .section__title--about {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .about-me__img {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 3;
     }
 }
