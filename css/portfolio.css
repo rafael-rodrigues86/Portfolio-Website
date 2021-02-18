@@ -1,5 +1,8 @@
-.portfolio-item-individual {
-    padding: 0 2em 2em;
+.intro {
+    padding-bottom: 2em;
+}
+
+.portfolio-item-individual {    
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
@@ -8,10 +11,11 @@
 .portfolio-item-individual p {
     max-width: 800px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;  
+    padding-bottom: 2em;  
 }
 
 .btn--portfolio {
-    margin-top: 4em;
+    margin: 4em 0;
 }
 

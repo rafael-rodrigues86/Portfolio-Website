@@ -40,8 +40,7 @@
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em);
-        
+        width: calc(100% + 1.5em);        
     }
 }
 
